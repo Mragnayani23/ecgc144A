@@ -74,7 +74,7 @@ def generate_ecgc_pdf(data: ECGCFormData):
     c.setFillColorRGB(0, 0, 0)                   # 🔴 Bright red text for visibility
 
     # Page 1
-    c.drawImage("C:/Users/Lenovo/OneDrive/Desktop/combinedpdf/1.png", 0, 0, width=width, height=height)
+    c.drawImage("C:\\Users\\Lenovo\\OneDrive\\Desktop\\144A\\1.png", 0, 0, width=width, height=height)
     c.drawString(250, 330, data.policyholder or "")
     c.drawString(170, 230, data.policy_number or "")
     c.drawString(190, 205, data.policy_from or "")
@@ -84,7 +84,7 @@ def generate_ecgc_pdf(data: ECGCFormData):
     c.showPage()
 
     # Page 2
-    c.drawImage("C:/Users/Lenovo/OneDrive/Desktop/combinedpdf/2.png", 0, 0, width=width, height=height)
+    c.drawImage("C:\\Users\\Lenovo\\OneDrive\\Desktop\\144A\\2.png", 0, 0, width=width, height=height)
     c.drawString(220, 830, data.buyer_name or "")
     c.drawString(150, 810, data.buyer_address or "")
     c.drawString(130, 780, data.buyer_city or "")
@@ -126,7 +126,7 @@ def generate_ecgc_pdf(data: ECGCFormData):
     c.showPage()
 
     # Page 3
-    c.drawImage("C:/Users/Lenovo/OneDrive/Desktop/combinedpdf/3.png", 0, 0, width=width, height=height)
+    c.drawImage("C:\\Users\\Lenovo\\OneDrive\\Desktop\\144A\\3.png", 0, 0, width=width, height=height)
     c.drawString(160, 555, data.cheque_no or "")
     c.drawString(260, 555, data.cheque_date or "")
     c.drawString(400, 555, data.cheque_for or "")
